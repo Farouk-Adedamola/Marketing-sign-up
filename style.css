@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.section {
+  background: #5200ff;
+  height: 60vh;
+  position: relative;
+  text-align: center;
+}
+
+.section:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.22;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: 100%;
+}
+
+.content {
+  position: relative;
+  /* line-height: 2.8rem; */
+  text-transform: uppercase;
+}
+
+.section,
+.form-section {
+  padding: 6.75rem 8vw;
+}
+
+.header {
+  line-height: 2.8rem;
+  color: #fff;
+}
+
+.paragraph {
+  padding: 3.125rem 1.75rem;
+  color: #fff;
+}
+
+.form-container {
+  margin: 3.125rem 1.65rem;
+}
+
+.each-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.68;
+}
+
+.each-input input {
+  padding: 0.8rem 5rem;
+  background: #ededed;
+  border: none;
+}
+
+.btn-container {
+  display: flex;
+}
+
+.btn {
+  margin-top: 1rem;
+  flex: 1;
+  padding: 0.8rem 5rem;
+  background: #ededed;
+  border: none;
+  text-align: center;
+  background: #5200ff;
+  border: none;
+  color: #fff;
+}
+
+@media screen and (min-width: 740px) {
+  .section,
+  .form-section {
+    padding: 9.75rem 5vw;
+  }
+  .header {
+    font-size: 4rem;
+    line-height: 3.8rem;
+  }
+  .paragraph {
+    padding: 6.125rem 1.75rem;
+    font-size: 1.65rem;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .each-input {
+    padding: auto;
+    margin: 0 auto;
+  }
+
+  .btn-container {
+    margin: 2rem auto;
+  }
+  /* .btn {
+    margin-left: 1.15rem;
+  } */
+}
+
+@media screen and (min-width: 1000px) {
+  .section {
+    width: 50%;
+    height: 100vh;
+  }
+
+  .form-container {
+    width: 50%;
+    position: absolute;
+    top: 20vh;
+    left: 48vw;
+  }
+  .header {
+    font-size: 3rem;
+    line-height: 3.2rem;
+    color: #fff;
+  }
+
+  .paragraph {
+    padding: 4.125rem 1.75rem;
+    font-size: 1.65rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    left: 60vw;
+    line-height: 4rem;
+  }
+}
+
+.btn:hover {
+  background: #540debbc;
+  transition: all 0.8s;
+}
