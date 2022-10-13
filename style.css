@@ -111,9 +111,7 @@ body {
   .btn-container {
     margin: 2rem auto;
   }
-  /* .btn {
-    margin-left: 1.15rem;
-  } */
+
 }
 
 @media screen and (min-width: 1000px) {
